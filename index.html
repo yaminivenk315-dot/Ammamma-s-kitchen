@@ -2,10 +2,15 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Ammamma's Kitchen — interactive scene</title>
 <style>
   * { box-sizing: border-box; }
-  html, body { margin: 0; padding: 0; background: #260f04; font-family: -apple-system, sans-serif; }
+  html, body { margin: 0; padding: 0; background: #260f04; font-family: -apple-system, sans-serif; height: auto; overflow-x: hidden; -webkit-text-size-adjust: 100%; }
+  body { display: flow-root; padding: 24px; box-sizing: border-box; }
+  html { box-sizing: border-box; }
+  .stage { height: auto; touch-action: manipulation; }
+  .stage > .scene-img { display: block; }
   .stage {
     position: relative;
     width: 100%;
